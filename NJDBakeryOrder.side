@@ -1,0 +1,452 @@
+{
+  "id": "4ef375ee-a72b-47ea-a356-e77faf02f74f",
+  "version": "2.0",
+  "name": "NJDBakeryOrder",
+  "url": "http://localhost:56887/src/order/testorder.html",
+  "tests": [{
+    "id": "adcd96fa-0a21-4c9a-9788-7202ee382fd2",
+    "name": "PriceRecalculatesOnQuantityChange",
+    "commands": [{
+      "id": "7b4e3572-fafa-4492-8f9c-a0c310df8e6d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:56887/src/order/testorder.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16c1b840-e78a-45e0-94f4-ba22860f5c2a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "391a4522-5f98-40d8-b72f-391d19a9f420",
+      "comment": "",
+      "command": "click",
+      "target": "id= product",
+      "targets": [
+        ["id= product", "id"],
+        ["name=product", "name"],
+        ["css=#\\ product", "css:finder"],
+        ["xpath=//select[@id=' product']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6815247-015a-434a-8497-a0bdcd65b2e8",
+      "comment": "",
+      "command": "select",
+      "target": "id= product",
+      "targets": [],
+      "value": "label=Chocolate Chip Cookies"
+    }, {
+      "id": "30144e10-b711-459c-97eb-5e8697bfefc8",
+      "comment": "",
+      "command": "click",
+      "target": "id= product",
+      "targets": [
+        ["id= product", "id"],
+        ["name=product", "name"],
+        ["css=#\\ product", "css:finder"],
+        ["xpath=//select[@id=' product']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa97a1a7-6d8a-4849-8acb-b489565363fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity1",
+      "targets": [
+        ["id=quantity1", "id"],
+        ["name=quantity", "name"],
+        ["css=#quantity1", "css:finder"],
+        ["xpath=//select[@id='quantity1']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div[2]/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6fcae9-6237-471e-8b15-12d122d3377f",
+      "comment": "",
+      "command": "select",
+      "target": "id=quantity1",
+      "targets": [],
+      "value": "label=5 batches"
+    }, {
+      "id": "6a275a11-b11f-44f5-9d2a-005ba085fee0",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity1",
+      "targets": [
+        ["id=quantity1", "id"],
+        ["name=quantity", "name"],
+        ["css=#quantity1", "css:finder"],
+        ["xpath=//select[@id='quantity1']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div[2]/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "784da25c-41b8-4aa1-a066-7f6b7731bb47",
+    "name": "OptionsResetAfterProductChange",
+    "commands": [{
+      "id": "c1f2e389-71f2-4305-8e6b-81d6ba2cdc44",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:56887/src/order/testorder.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82fbbd16-3179-47a1-98c8-a4e855570fbb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cbf6f75-6ece-41b0-ae29-26ee4dbefe52",
+      "comment": "",
+      "command": "click",
+      "target": "id= product",
+      "targets": [
+        ["id= product", "id"],
+        ["name=product", "name"],
+        ["css=#\\ product", "css:finder"],
+        ["xpath=//select[@id=' product']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ac3299b-f393-40d8-b6c6-09d6b821a6ce",
+      "comment": "",
+      "command": "select",
+      "target": "id= product",
+      "targets": [],
+      "value": "label=Chocolate Chip Cookies"
+    }, {
+      "id": "61f2164a-45c5-47e2-af9d-0fa75be0db49",
+      "comment": "",
+      "command": "click",
+      "target": "id= product",
+      "targets": [
+        ["id= product", "id"],
+        ["name=product", "name"],
+        ["css=#\\ product", "css:finder"],
+        ["xpath=//select[@id=' product']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a12a7eb2-325a-4456-8bad-ba0d6c447ecb",
+      "comment": "",
+      "command": "click",
+      "target": "name=NutFree",
+      "targets": [
+        ["name=NutFree", "name"],
+        ["css=.order-form__checkbox--nutFree1", "css:finder"],
+        ["xpath=//input[@name='NutFree']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div[2]/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c47332e-088c-45bb-a220-46b8b0808986",
+      "comment": "",
+      "command": "click",
+      "target": "name=Vegan",
+      "targets": [
+        ["name=Vegan", "name"],
+        ["css=.order-form__checkbox--vegan1", "css:finder"],
+        ["xpath=//input[@name='Vegan']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div[2]/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3b7387f-0d9b-4a85-a2f9-321ae6923f6b",
+      "comment": "",
+      "command": "click",
+      "target": "id= product",
+      "targets": [
+        ["id= product", "id"],
+        ["name=product", "name"],
+        ["css=#\\ product", "css:finder"],
+        ["xpath=//select[@id=' product']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2af345b-c659-438a-957f-795f1c3265da",
+      "comment": "",
+      "command": "select",
+      "target": "id= product",
+      "targets": [],
+      "value": "label=Maple Pecan Shortbread Cookies"
+    }, {
+      "id": "3989698f-02fa-47be-a16c-c93a9a5cfc24",
+      "comment": "",
+      "command": "click",
+      "target": "id= product",
+      "targets": [
+        ["id= product", "id"],
+        ["name=product", "name"],
+        ["css=#\\ product", "css:finder"],
+        ["xpath=//select[@id=' product']", "xpath:attributes"],
+        ["xpath=//div[@id='row1']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "02f48ae9-d624-43be-8c78-a91207dfeeed",
+    "name": "CreatesNewRowWhenAddMoreIsClicked",
+    "commands": [{
+      "id": "2cf74f90-523d-404b-9724-047fe67f04b2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:56887/src/order/testorder.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb6d8997-7fac-479a-99b9-01c6f2816b04",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11024f85-b424-4aa7-b836-a466971de6f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fcff0b4-da33-4577-85b7-8ed7615d2d30",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecb92b09-f7fc-4875-891e-27cbd2d575dc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dad7a45-a60d-407a-aa6a-58b7b4d7af5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=remove-row__button2",
+      "targets": [
+        ["id=remove-row__button2", "id"],
+        ["css=#remove-row__button2", "css:finder"],
+        ["xpath=//button[@id='remove-row__button2']", "xpath:attributes"],
+        ["xpath=//div[@id='row2']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fde77fa-5598-43ca-a52d-5a93838a8310",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6f5eaa5-003d-4123-b5cd-548787008cba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c4f738c-73e0-46e3-9648-38abd930c97d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26de59bf-2aec-4d06-b4e0-7954299837fe",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d348a93-205b-4935-b84d-b1237a24653b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "504ac117-80ca-4a3a-85c0-39f9aef3b620",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebe67d85-c77c-44f4-83e9-84958bdf4f22",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf443edb-7282-4b39-8d13-91ac67b4cb2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=remove-row__button4",
+      "targets": [
+        ["id=remove-row__button4", "id"],
+        ["css=#remove-row__button4", "css:finder"],
+        ["xpath=//button[@id='remove-row__button4']", "xpath:attributes"],
+        ["xpath=//div[@id='row4']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa7ebddd-48d0-4ee5-af80-b818fbfebb95",
+      "comment": "",
+      "command": "click",
+      "target": "id=remove-row__button3",
+      "targets": [
+        ["id=remove-row__button3", "id"],
+        ["css=#remove-row__button3", "css:finder"],
+        ["xpath=//button[@id='remove-row__button3']", "xpath:attributes"],
+        ["xpath=//div[@id='row3']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0878fcc9-b97d-4ce5-8610-04f8ecd0b514",
+      "comment": "",
+      "command": "click",
+      "target": "id=remove-row__button2",
+      "targets": [
+        ["id=remove-row__button2", "id"],
+        ["css=#remove-row__button2", "css:finder"],
+        ["xpath=//button[@id='remove-row__button2']", "xpath:attributes"],
+        ["xpath=//div[@id='row2']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7fd3578-4a02-4242-bee4-eeba4dfed588",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6b2425e-10ae-4760-af7f-3fc4d90299c9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c69e7023-6cf2-4f7e-8bc7-8c201e4a527e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.add-row__button",
+      "targets": [
+        ["css=.add-row__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c5502c7-a0ef-4fe2-b8cb-f4423d830b74",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,400)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a5008de8-2d0a-4d2e-8d6b-4da31060e8c0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["adcd96fa-0a21-4c9a-9788-7202ee382fd2"]
+  }],
+  "urls": ["http://localhost:56887/src/order/testorder.html"],
+  "plugins": []
+}
