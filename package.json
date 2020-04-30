@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/doudsnj/NJDBakeryTests#readme",
   "dependencies": {
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "selenium-webdriver": "4.0.0-alpha.1"
   }
 }
